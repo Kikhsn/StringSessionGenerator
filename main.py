@@ -30,7 +30,7 @@ while True:
         with Client("my_session", api_id=API_ID, api_hash=API_HASH) as app:
             session_string = app.export_session_string()
             subprocess.call(['cls' if os.name == 'nt' else 'clear'], shell=True)
-            print("String Session Pyrogram:\n")
+            print("String Pyrogram:\n")
             print(session_string)
             print()
     
@@ -39,7 +39,7 @@ while True:
         with TelegramClient(StringSession(), API_ID, API_HASH) as client:
             session_string = client.session.save()
             subprocess.call(['cls' if os.name == 'nt' else 'clear'], shell=True)
-            print("String Session Telethon:\n")
+            print("String Telethon:\n")
             print(session_string)
             print()
     
